@@ -1,0 +1,49 @@
+/* general use */
+
+.pad-xs { padding: 12.5px 0; }
+ .pad-s { padding: 25px 0; }
+ .pad-m { padding: 50px 0; }
+ .pad-l { padding: 75px 0; }
+.pad-xl { padding: 100px 0; }
+
+/* grid system */
+
+.container {
+	display: block;
+	margin: 0 auto;
+	background-color: red;
+}
+
+.col-1, .col-2, .col-3,
+.col-4, .col-6, .col-8,
+.col-10, .col-12 {
+	background-color: blue;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+ .col-2 { width: calc(100px * 2); }
+ .col-3 { width: calc(100px * 3); }
+ .col-4 { width: calc(100px * 4); }
+ .col-6 { width: calc(100px * 6); }
+.col-12 { width: calc(100px * 12); }
+.container { width: 1200px; }
+
+@media (max-width: 1250px) { 
+ .col-2 { width: calc(66.66px * 2); }
+ .col-3 { width: calc(66.66px * 3); }
+ .col-4 { width: calc(66.66px * 4); }
+ .col-6 { width: calc(66.66px * 6); }
+.col-12 { width: calc(66.66px * 12); }
+.container { width: 800px; }
+}
+
+@media (max-width: 850px) {
+ .col-2 { width: calc(33.33px * 6); }
+ .col-3 { width: calc(33.33px * 12); }
+ .col-4 { width: calc(33.33px * 12); }
+ .col-6 { width: calc(33.33px * 12); }
+.col-12 { width: calc(33.33px * 12); }
+.container { width: 400px; }
+}
